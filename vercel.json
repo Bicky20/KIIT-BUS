@@ -1,5 +1,5 @@
 {
-  "installCommand": "pnpm install --ignore-engines",
+  "installCommand": "pnpm install --config.engine-strict=false",
   "buildCommand": "pnpm run build",
   "outputDirectory": "src/frontend/dist",
   "framework": null
