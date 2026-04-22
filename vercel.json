@@ -1,6 +1,6 @@
 {
-  "installCommand": "npm install -g pnpm@latest && pnpm install --ignore-engines",
-  "buildCommand": "cd src/frontend && pnpm run build",
+  "installCommand": "pnpm install --ignore-engines",
+  "buildCommand": "pnpm run build",
   "outputDirectory": "src/frontend/dist",
   "framework": null
 }
