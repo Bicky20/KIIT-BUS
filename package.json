@@ -2,15 +2,8 @@
   "name": "kiit-bus",
   "type": "module",
   "packageManager": "pnpm@8.0.0",
-  "engines": {
-    "node": ">=16.0.0",
-    "pnpm": ">=6.0.0"
-  },
   "scripts": {
-    "build": "pnpm -r --if-present run build",
-    "typecheck": "pnpm -r --if-present run typecheck",
-    "check": "pnpm -r --if-present run check",
-    "fix": "pnpm -r --if-present run fix"
+    "build": "pnpm -r --if-present run build"
   },
   "devDependencies": {
     "sharp": "^0.34.4"
