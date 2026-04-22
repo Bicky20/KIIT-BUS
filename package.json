@@ -1,10 +1,9 @@
 {
-  "name": "kiit-tracking",
+  "name": "kiit-bus",
   "type": "module",
   "engines": {
     "node": ">=16.0.0",
-    "pnpm": ">=7.0.0",
-    "npm": "please use pnpm"
+    "pnpm": ">=6.0.0"
   },
   "scripts": {
     "build": "pnpm -r --if-present run build",
