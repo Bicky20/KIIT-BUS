@@ -1,6 +1,7 @@
 {
   "name": "kiit-bus",
   "type": "module",
+  "packageManager": "pnpm@8.0.0",
   "engines": {
     "node": ">=16.0.0",
     "pnpm": ">=6.0.0"
