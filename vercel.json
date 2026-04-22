@@ -1,5 +1,5 @@
 {
-  "installCommand": "corepack enable && corepack prepare pnpm@8.0.0 --activate && pnpm install",
+  "installCommand": "npm i -g pnpm && pnpm install",
   "buildCommand": "pnpm run build",
   "outputDirectory": "src/frontend/dist",
   "framework": null
