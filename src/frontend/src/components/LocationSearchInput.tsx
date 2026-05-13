@@ -294,5 +294,4 @@ const LocationSearchInput: React.FC<LocationSearchInputProps> = ({
     </div>
   );
 };
-
 export default LocationSearchInput;

@@ -393,7 +393,7 @@ class StorageGatewayClient {
         method: "PUT",
         headers: {
           "Content-Type": "application/octet-stream",
-          "X-Caffeine-Project-ID": params.projectId,
+          "X-kiit-Project-ID": params.projectId,
         },
         body: params.chunkData as BodyInit,
       });
@@ -450,7 +450,7 @@ class StorageGatewayClient {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
-          "X-Caffeine-Project-ID": projectId,
+          "X-kiit-Project-ID": projectId,
         },
         body: JSON.stringify(requestBody),
       });
@@ -484,7 +484,7 @@ export class StorageClient {
   private async getCertificate(hash: string): Promise<Uint8Array> {
     const args = IDL.encode([IDL.Text], [hash]);
     const result = await this.agent.call(this.backendCanisterId, {
-      methodName: "_caffeineStorageCreateCertificate",
+      methodName: "_kiitStorageCreateCertificate",
       arg: args,
     });
     const respone = result.response.body;

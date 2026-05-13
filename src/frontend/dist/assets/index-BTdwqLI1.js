@@ -27572,12 +27572,12 @@ const RouteSelector = ({
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "a",
             {
-              href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`,
+              href: `#`,
               target: "_blank",
               rel: "noopener noreferrer",
               className: "underline underline-offset-2",
               style: { color: "oklch(0.42 0.08 255)" },
-              children: "caffeine.ai"
+              children: ""
             }
           )
         ]
@@ -39585,7 +39585,7 @@ class StorageGatewayClient {
         method: "PUT",
         headers: {
           "Content-Type": "application/octet-stream",
-          "X-Caffeine-Project-ID": params.projectId
+          "X-kiit-Project-ID": params.projectId
         },
         body: params.chunkData
       });
@@ -39626,7 +39626,7 @@ class StorageGatewayClient {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
-          "X-Caffeine-Project-ID": projectId
+          "X-kiit-Project-ID": projectId
         },
         body: JSON.stringify(requestBody)
       });
@@ -39653,7 +39653,7 @@ class StorageClient {
   async getCertificate(hash) {
     const args = encode$1([Text], [hash]);
     const result = await this.agent.call(this.backendCanisterId, {
-      methodName: "_caffeineStorageCreateCertificate",
+      methodName: "_kiitStorageCreateCertificate",
       arg: args
     });
     const respone = result.response.body;
@@ -39758,7 +39758,7 @@ class StorageClient {
   }
 }
 var define_process_env_default = {};
-const DEFAULT_STORAGE_GATEWAY_URL = "https://blob.caffeine.ai";
+const DEFAULT_STORAGE_GATEWAY_URL = "";
 const DEFAULT_BUCKET_NAME = "default-bucket";
 const DEFAULT_PROJECT_ID = "0000000-0000-0000-0000-00000000000";
 let configCache = null;
@@ -39779,7 +39779,7 @@ async function loadConfig() {
     const fullConfig = {
       backend_host: config.backend_host === "undefined" ? void 0 : config.backend_host,
       backend_canister_id: config.backend_canister_id === "undefined" ? backendCanisterId : config.backend_canister_id,
-      storage_gateway_url: "https://blob.caffeine.ai",
+      storage_gateway_url: "",
       bucket_name: DEFAULT_BUCKET_NAME,
       project_id: config.project_id !== "undefined" ? config.project_id : DEFAULT_PROJECT_ID,
       ii_derivation_origin: config.ii_derivation_origin === "undefined" ? void 0 : config.ii_derivation_origin
@@ -42201,12 +42201,12 @@ const LoginPage = ({ onSuccess }) => {
               /* @__PURE__ */ jsxRuntimeExports.jsx(
                 "a",
                 {
-                  href: `https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`,
+                  href: `#`,
                   target: "_blank",
                   rel: "noopener noreferrer",
                   className: "underline underline-offset-2",
                   style: { color: "oklch(0.78 0.12 255)" },
-                  children: "caffeine.ai"
+                  children: ""
                 }
               )
             ]
