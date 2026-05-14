@@ -101,7 +101,7 @@ set -e
 CORE_LIB_VERSION=implicits-20
 CORE_LIB_INSTALL_DIR="$HOME/.motoko/core/$CORE_LIB_VERSION"
 mkdir -p "$CORE_LIB_INSTALL_DIR"
-CORE_LIB_URL="https://github.com/kiit-bus/motoko-core/archive/refs/tags/${CORE_LIB_VERSION}.tar.gz"
+CORE_LIB_URL="https://github.com/Biki/motoko-core/archive/refs/tags/${CORE_LIB_VERSION}.tar.gz"
 SOURCE_SUB_FOLDER="motoko-core-${CORE_LIB_VERSION}/src"
 curl -L "$CORE_LIB_URL" | tar -xz --strip-components=2 -C "$CORE_LIB_INSTALL_DIR" "$SOURCE_SUB_FOLDER"
 EOF
@@ -112,7 +112,7 @@ set -e
 BASE_LIB_VERSION=SKIP
 BASE_LIB_INSTALL_DIR="$HOME/.motoko/base/$BASE_LIB_VERSION"
 mkdir -p "$BASE_LIB_INSTALL_DIR"
-BASE_LIB_URL="https://github.com/kiit-bus/motoko-base/archive/refs/tags/moc-${BASE_LIB_VERSION}.tar.gz"
+BASE_LIB_URL="https://github.com/Biki/motoko-base/archive/refs/tags/moc-${BASE_LIB_VERSION}.tar.gz"
 SOURCE_SUB_FOLDER="motoko-base-moc-${BASE_LIB_VERSION}/src"
 curl -L "$BASE_LIB_URL" | tar -xz --strip-components=2 -C "$BASE_LIB_INSTALL_DIR" "$SOURCE_SUB_FOLDER"
 EOF
