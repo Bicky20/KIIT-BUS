@@ -89,7 +89,7 @@ case ${TARGETARCH:-$(uname -m)} in
 esac
 COMPILER_INSTALL_DIR="$HOME/.motoko/moc/$MOTOKO_VERSION/bin"
 mkdir -p "$COMPILER_INSTALL_DIR"
-COMPILER_RELEASE_URL="https://github.com/kiit-bus/motoko/releases/download/${MOTOKO_VERSION}/${COMPILER_TARBALL}"
+COMPILER_RELEASE_URL="https://github.com/Biki/motoko/releases/download/${MOTOKO_VERSION}/${COMPILER_TARBALL}"
 curl -L "$COMPILER_RELEASE_URL" | tar -xz -C "$COMPILER_INSTALL_DIR"
 COMPILER_BINARY_DIR=$(find "$COMPILER_INSTALL_DIR" -name "moc" -type f | head -1)
 chmod +x "$COMPILER_BINARY_DIR"
